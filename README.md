@@ -1,2 +1,11 @@
-# optec-2025
-Powerpoint slides and other content for my presentation at OpTeC 2025.
+# The Noise Measured by Back-Illuminated Silicon Sensors Modeled Using Partial Charge Collection
+
+Roy T. Smart, Charles C. Kankelborg, Jacob D. Parker
+
+## Abstract
+
+Back-illuminated silicon imaging sensors are used in many ultraviolet (UV) astronomical instruments, including NASA's Atmospheric Imaging Assembly (AIA), the Interface Region Imaging Spectrograph (IRIS), and the Hubble Space Telescope's Wide Field Camera 3 (WFC3). While the noise in these sensors is typically assumed to be dominated by photon shot noise, recent measurements from IRIS and WFC3 reveal a significant discrepancy: the noise measured in the UV is systematically lower than theoretical predictions. We propose that this discrepancy is caused by partial charge collection (PCC), a process where a fraction of photogenerated electron-hole pairs recombine before they can be measured. We present a simple theoretical model that incorporates the effects of PCC and shows better agreement with the noise measurements from both IRIS and WFC3, resolving the previously unexplained discrepancy. This finding implies that the signal-to-noise ratio achievable with these instruments is higher than previously understood, impacting both future instrument proposals and the uncertainties of our current UV imagery.
+
+## Technical Abstract
+
+The Interface Region Imaging Spectrograph (IRIS) and the Wide Field Camera 3 (WFC3) are both ultraviolet astronomical instruments that use back-illuminated CCDs to record images. Both IRIS and WFC3 have measured less noise in the ultraviolet than predicted by shot noise. Each instrument team attributed this discrepancy to charge diffusion/spreading, which is a slight blurring of the charge cloud produced within the sensor leading to correlations between neighboring pixels and less measured noise. We modeled the effect of charge diffusion and found that it could not explain the observed discrepancy. Instead, we found that the discrepancy could be explained by modeling the effect of partial charge collection (PCC) in detail by using a sum of binomial distributions. We will show that this model is much more accurate than the traditional model at predicting the noise measured by IRIS and WFC3. We will also present a reference implementation of this model in Python which can predict how much noise to expect for other instrument designs.

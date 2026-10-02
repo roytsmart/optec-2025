@@ -9,3 +9,18 @@ Back-illuminated silicon imaging sensors are used in many ultraviolet (UV) astro
 ## Technical Abstract
 
 The Interface Region Imaging Spectrograph (IRIS) and the Wide Field Camera 3 (WFC3) are both ultraviolet astronomical instruments that use back-illuminated CCDs to record images. Both IRIS and WFC3 have measured less noise in the ultraviolet than predicted by shot noise. Each instrument team attributed this discrepancy to charge diffusion/spreading, which is a slight blurring of the charge cloud produced within the sensor leading to correlations between neighboring pixels and less measured noise. We modeled the effect of charge diffusion and found that it could not explain the observed discrepancy. Instead, we found that the discrepancy could be explained by modeling the effect of partial charge collection (PCC) in detail by using a sum of binomial distributions. We will show that this model is much more accurate than the traditional model at predicting the noise measured by IRIS and WFC3. We will also present a reference implementation of this model in Python which can predict how much noise to expect for other instrument designs.
+
+## The slides on the web
+
+https://roytsmart.github.io/optec-2025/ shows the slides with the speaker
+notes under each one, and the PDF is at
+https://roytsmart.github.io/optec-2025/S02%2006%20Smart%20Roy%20The%20Noise%20Measured.pdf.
+The web version is built from the deck with
+[pptx-to-html](https://github.com/roytsmart/pptx-to-html):
+
+```bash
+pptx-to-html "S02 06 Smart Roy The Noise Measured.pptx" docs \
+    --title "The Noise Measured by Back-Illuminated Silicon Sensors Modeled Using Partial Charge Collection" \
+    --subtitle "OpTeC 2025 · the slides as they were presented, with the speaker notes" \
+    --notes
+```
